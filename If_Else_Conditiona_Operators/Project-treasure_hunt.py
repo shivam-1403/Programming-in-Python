@@ -26,9 +26,9 @@ if choice1 == 'l':
     if choice2 == 'w':
         choice3=input("You've reached the island. There are 3 doors, Yellow, Red and Blue, one has the treasure, which one to choose ?\nPress 'Y' for Yellow, 'R' for Red or 'B' for Blue : ").lower()
         if choice3 == 'y':
-            print("The Treasure was not there. GAME OVER !")
-        elif choice3 == 'r':
             print("You Found the Treasure !\nYou Win !")
+        elif choice3 == 'r':
+            print("The Treasure was not there. GAME OVER !")
         elif choice3 == 'b':
             print("The Treasure was not there. GAME OVER !")
         else:
