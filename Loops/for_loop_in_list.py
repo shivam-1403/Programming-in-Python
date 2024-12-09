@@ -3,7 +3,6 @@
 student_height=input("Enter the heights of student : ").split()
 for n in range(0, len(student_height)):
     student_height[n]=int(student_height[n])
-print(student_height)
 
 add=0
 for height in student_height:
