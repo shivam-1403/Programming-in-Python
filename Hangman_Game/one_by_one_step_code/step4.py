@@ -2,8 +2,7 @@
 
 import random
 
-stages = [
-'''
+stages = ['''
   +---+
   |   |
   O   |
