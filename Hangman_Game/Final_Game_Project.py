@@ -14,7 +14,6 @@ word_length = len(chosen_word)
 
 lives = 6
 
-
 #Create blanks
 display = []
 for _ in range(word_length):
