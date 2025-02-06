@@ -1,5 +1,6 @@
 import requests
 from datetime import datetime
+import time
 
 MY_LAT = 30.475663
 MY_LNG = 74.556521
@@ -33,8 +34,11 @@ def is_night():
 
     if time_now >= sunset or time_now <= sunrise:
         return True 
-    
-if is_iss_overhead() and is_night():
-    print("Iss Overhead")
-else:
-    print("Not Overhead")
+
+while True:
+    time.sleep(60)    
+    if is_iss_overhead() and is_night():
+        print("Iss Overhead")
+    else:
+        print("Not Overhead")
+        
