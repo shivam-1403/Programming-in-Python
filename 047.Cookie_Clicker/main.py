@@ -1,12 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 import keyboard
 import time
 
 chrome_driver_path = Service(r"D:\Developer\chromedriver.exe")
-driver = webdriver.Chrome(service=chrome_driver_path)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.maximize_window()
 driver.get("https://orteil.dashnet.org/experiments/cookie/")
 
